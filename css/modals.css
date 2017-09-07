@@ -12,7 +12,5 @@
 .reveal-modal .info .avatar {
     border-radius: 50%;
     float: left;
-    height: 75px;
     margin-right: 1rem;
-    width: 75px;
 }

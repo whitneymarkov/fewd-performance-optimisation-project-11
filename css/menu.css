@@ -1,8 +1,9 @@
 .menu {
-    background-color: rgb(239, 240, 241);
     font-family: "Arvo", serif;
     padding: 1.5rem 3rem;
-    height: auto;
+    height: 15rem;
+    max-width: 1225px;
+    margin: 0 auto;
 }
 .menu .inline-list {
     padding-top: 1rem;
@@ -28,11 +29,17 @@
 }
 @media only screen and (min-width: 40.063em) {
     .menu {
-        height: 7rem;
+        height: 10rem;
     }
     .menu .inline-list {
         float: left;
         margin: 0 0 0 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 76.5625rem) {
+    .menu {
+        height: 7rem;
     }
 }
 .menu .account {

@@ -1,5 +1,7 @@
 footer {
     padding: 1.5rem 3rem;
+    max-width: 1225px;
+    margin: 0 auto;
 }
 footer .row {
     max-width: 100%;
@@ -10,7 +12,7 @@ footer .columns {
 footer .social {
     text-align: right;
 }
-footer .social img {
+footer svg {
     height: 35px;
     width: 35px;
 }

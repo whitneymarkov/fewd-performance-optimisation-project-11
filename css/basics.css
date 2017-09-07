@@ -1,3 +1,5 @@
 body {
-    background-color: rgb(235, 236, 237);
+    background-color: rgb(239, 240, 241);
+    min-width: 320px;
+    margin: 0 auto;
 }
