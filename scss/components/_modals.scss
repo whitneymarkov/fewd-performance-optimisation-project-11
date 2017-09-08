@@ -1,0 +1,18 @@
+//====================================
+//  Modals
+//====================================
+.reveal-modal .info {
+    padding: 2rem 1rem 0;
+}
+.reveal-modal .info .attribution {
+    color: $dark-grey;
+    line-height: 75px;
+}
+.reveal-modal .info .attribution b {
+    font-weight: 700;
+}
+.reveal-modal .info .avatar {
+    border-radius: $round;
+    float: left;
+    margin-right: $gutter;
+}

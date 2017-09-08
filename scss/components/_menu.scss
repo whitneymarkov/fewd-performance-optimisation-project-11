@@ -1,0 +1,82 @@
+//====================================
+//  Menu
+//====================================
+
+.menu {
+    padding: 1.5rem 3rem;
+    height: 15rem;
+    max-width: 1225px;
+    margin: $center;
+    @include mq(tablet) {
+        height: 10rem;
+    }
+    @include mq(desktop) {
+        height: 7rem;
+    }
+}
+.menu .inline-list {
+    padding-top: $gutter;
+    text-align: center;
+    @include mq(tablet) {
+        float: left;
+        margin: 0 0 0 1.5rem;
+    }
+    li {
+        float: none;
+        display: inline-block;
+    }
+    a {
+       color: $dark-grey;
+       font-weight: bold;
+       letter-spacing: 0.125rem;
+       padding-bottom: 0.5rem;
+       text-transform: uppercase;
+   }
+   a:hover {
+       color: $blue;
+       transition: all .3s ease-in-out;
+   }
+   .active a {
+       color: $blue;
+   }
+}
+
+.menu .account {
+    float: right;
+    margin: -.75rem 0 0 0;
+    li {
+        margin-left: .2rem;
+    }
+    a {
+        border: 2px solid;
+        border-radius: .25rem;
+        color: $medium-grey;
+        font-weight: 500;
+        letter-spacing: normal;
+        margin-left: 0.5rem;
+        padding: 0.5rem 1.5rem;
+        text-transform: none;
+        &:hover {
+            background-color: $blue;
+            border-color: $blue;
+            color: $white;
+        }
+    }
+}
+
+.menu .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 1rem 0 1rem 0;
+    color: $dark-grey;
+    width: 40rem;
+    height: 3rem;
+    @include mq(tablet) {
+        font-size: 2rem;
+        float: left;
+    }
+    b {
+        color: $blue;
+    }
+}

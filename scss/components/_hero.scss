@@ -1,0 +1,33 @@
+//====================================
+//  Hero
+//====================================
+
+.hero {
+    background: url("../img/photos/header.jpg") no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    margin-bottom: $gutter;
+    padding: 1.5rem 3rem;
+}
+.hero .info {
+    float: right;
+    margin-top: 47vh;
+    .attribution {
+        color: $light-grey;
+        font-size: 0.95rem;
+        float: left;
+        text-align: right;
+        b {
+            color: $dark-grey;
+            display: block;
+            font-weight: 500;
+        }
+    }
+    .avatar {
+        border-radius: $round;
+        float: right;
+        height: 50px;
+        width: 50px;
+        margin-left: $gutter;
+    }
+}

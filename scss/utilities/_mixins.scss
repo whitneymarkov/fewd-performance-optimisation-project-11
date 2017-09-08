@@ -1,0 +1,25 @@
+//====================================
+//  Mixins
+//====================================
+
+// Media Queries
+@mixin mq($brk) {
+  @if $brk == "mobile" {
+    @media only screen and (min-width: $brk-mobile) {
+      @content;
+    }
+  }
+  @else if $brk == "tablet" {
+    @media only screen and (min-width: $brk-tablet) {
+      @content;
+    }
+  }
+  @else if $brk == "desktop" {
+    @media only screen and (min-width: $brk-desktop) {
+      @content;
+    }
+  }
+  @else {
+    @error " `#{$brk}` not found."
+  }
+}

@@ -1,23 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>StockPHOTOGRAPHY</title>
-        <script src="js/jquery.js"></script>
-        <script src="js/fastclick.js"></script>
-        <script src="js/foundation.js"></script>
-        <script src="js/foundation.equalizer.js"></script>
-        <script src="js/foundation.reveal.js"></script>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/foundation.css">
-        <link rel="stylesheet" href="css/arvo.css">
-        <link rel="stylesheet" href="css/ubuntu.css">
-        <link rel="stylesheet" href="css/basics.css">
-        <link rel="stylesheet" href="css/menu.css">
-        <link rel="stylesheet" href="css/hero.css">
-        <link rel="stylesheet" href="css/photo-grid.css">
-        <link rel="stylesheet" href="css/modals.css">
-        <link rel="stylesheet" href="css/footer.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css">
+        <link rel="stylesheet" href="css/application.css">
     </head>
     <body>
         <nav class="menu">
@@ -88,23 +77,23 @@
             </div>
             <div class="row" data-equalizer>
                 <div class="medium-4 columns image">
-                    <a href="#" data-reveal-id="photo3-1"><img src="img/photos/photo7.jpg" alt="Photo"  data-equalizer-watch></a>
+                    <a href="#" data-reveal-id="photo3-1"><img src="./img/photos/photo7.jpg" alt="Photo"  data-equalizer-watch></a>
                     <div class="info">
-                        <img src="img/avatars/avatar3.jpg" alt="Photo"  class="avatar">
+                        <img src="./img/avatars/avatar3.jpg" alt="Photo"  class="avatar">
                         <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
                     </div>
                 </div>
                 <div class="medium-4 columns image">
-                    <a href="#" data-reveal-id="photo3-2"><img src="img/photos/photo8.jpg" alt="Photo"  data-equalizer-watch></a>
+                    <a href="#" data-reveal-id="photo3-2"><img src="./img/photos/photo8.jpg" alt="Photo"  data-equalizer-watch></a>
                     <div class="info">
                         <img src="img/avatars/avatar7.jpg" alt="Photo"  class="avatar">
                         <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
                     </div>
                 </div>
                 <div class="medium-4 columns image">
-                    <a href="#" data-reveal-id="photo3-3"><img src="img/photos/photo9.jpg" alt="Photo"  data-equalizer-watch></a>
+                    <a href="#" data-reveal-id="photo3-3"><img src="./img/photos/photo9.jpg" alt="Photo" data-equalizer-watch></a>
                     <div class="info">
-                        <img src="img/avatars/avatar4.jpg" alt="Photo"  class="avatar">
+                        <img src="./img/avatars/avatar4.jpg" width="50px" alt="Photo"  class="avatar">
                         <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
                     </div>
                 </div>
@@ -116,109 +105,29 @@
                 <div class="medium-6 columns social">
                     <a href="http://twitter.com">
                         <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                          <circle class="outer-shape" cx="50" cy="50" r="48" fill="#A5ACBA"/>
+                          <circle class="outer-shape" cx="50" cy="50" r="48"/>
                           <path class="inner-shape" d="M66.3335 25.5h-32.666c-4.492 0-8.1675 3.6755-8.1675 8.168v32.6645c0 4.495 3.6755 8.1675 8.167 8.1675h32.666c4.493.0005 8.167-3.6725 8.167-8.1675v-32.664c0-4.492-3.674-8.168-8.1665-8.1685zM67.159 50h-7.9715v21.4375H50V50h-4.4275v-7.0135H50v-4.555c0-6.189 2.6695-9.8695 9.947-9.8695h8.386v7.588h-6.8495c-2.033-.0035-2.285 1.06-2.285 3.039l-.0115 3.797h9.188l-1.2155 7.0135V50z" fill="#f7f7f7"/>
                         </svg>
                     </a>
                     <a href="http://instagram.com">
                         <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                          <circle class="outer-shape" cx="50" cy="50" r="48" fill="#A5ACBA"/>
+                          <circle class="outer-shape" cx="50" cy="50" r="48"/>
                           <path class="inner-shape" d="M69.1 25.5H30.9c-2.975 0-5.387 2.4135-5.387 5.3905V69.11c0 2.977 2.412 5.39 5.387 5.39h38.2c2.975 0 5.387-2.413 5.387-5.39V30.8905C74.4865 27.9135 72.0745 25.5 69.1 25.5zM49.973 40.592c5.178 0 9.376 4.2 9.376 9.381 0 5.1805-4.198 9.3805-9.376 9.3805s-9.376-4.2-9.376-9.3805 4.1975-9.381 9.376-9.381zm18.7835 26.2155c0 1.0825-.8765 1.9595-1.9585 1.9595H33.1705c-1.082 0-1.9585-.8775-1.9585-1.9595v-20.53h4.254c-.2945 1.175-.452 2.4035-.452 3.67 0 8.306 6.7295 15.0395 15.0315 15.0395S65.077 58.254 65.077 49.9475c0-1.2665-.1575-2.495-.452-3.67h4.1315v20.53zm.1255-28.2455c0 1.0825-.877 1.9595-1.959 1.9595h-5.5615c-1.082 0-1.9585-.8775-1.9585-1.9595v-5.565c0-1.0825.877-1.9595 1.9585-1.9595h5.5615c1.0825 0 1.959.8775 1.959 1.9595v5.565z" fill="#f7f7f7"/>
                         </svg>
 
                     </a>
                     <a href="http://facebook.com">
                         <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                          <circle class="outer-shape" cx="50" cy="50" r="48" fill="#A5ACBA"/>
+                          <circle class="outer-shape" cx="50" cy="50" r="48"/>
                           <path class="inner-shape" d="M74.5005 34.714c-1.803.804-3.74 1.3475-5.7735 1.592 2.075-1.2515 3.669-3.233 4.4205-5.5945-1.9425 1.159-4.0935 2-6.384 2.454C64.93 31.2 62.317 29.972 59.4255 29.972c-5.552 0-10.0535 4.527-10.0535 10.1115 0 .7925.0885 1.564.26 2.3045-8.355-.4225-15.7625-4.4475-20.721-10.5655-.865 1.494-1.361 3.231-1.361 5.084 0 3.5085 1.775 6.604 4.4725 8.417-1.648-.052-3.1985-.507-4.553-1.2645-.001.0425-.001.085-.001.1275 0 4.8995 3.4655 8.986 8.0645 9.9155-.844.2315-1.7315.355-2.6485.355-.648 0-1.2775-.0635-1.8915-.1815 1.2795 4.017 4.992 6.941 9.391 7.0225-3.4405 2.712-7.7755 4.3285-12.4855 4.3285-.8115 0-1.6115-.048-2.398-.141 4.449 2.869 9.7335 4.5435 15.41 4.5435 18.491 0 28.603-15.4085 28.603-28.7715 0-.4385-.01-.874-.0295-1.3085 1.964-1.4265 3.6685-3.208 5.0165-5.235z" fill="#f7f7f7"/>
                         </svg>
                     </a>
                 </div>
             </div>
         </footer>
-        <div id="photo1-1" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
-            <h2 class="modalTitle">Photo</h2>
-            <img src="img/photos/photo1-large.jpg" alt="Photo one" >
-            <div class="info">
-                <img src="img/avatars/avatar2.jpg" alt="Photo"  class="avatar">
-                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
-            </div>
-            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-        </div>
-        <div id="photo1-2" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
-            <h2 class="modalTitle">Photo</h2>
-            <img src="img/photos/photo2-large.jpg" alt="Photo" >
-            <div class="info">
-                <img src="img/avatars/avatar3.jpg" alt="Photo"  class="avatar">
-                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
-            </div>
-            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-        </div>
-        <div id="photo1-3" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
-            <h2 class="modalTitle">Photo</h2>
-            <img src="img/photos/photo3-large.jpg" alt="Photo" >
-            <div class="info">
-                <img src="img/avatars/avatar4.jpg" alt="Photo"  class="avatar">
-                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
-            </div>
-            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-        </div>
-        <div id="photo2-1" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
-            <h2 class="modalTitle">Photo</h2>
-            <img src="img/photos/photo4-large.jpg" alt="Photo" >
-            <div class="info">
-                <img src="img/avatars/avatar5.jpg" alt="Photo"  class="avatar">
-                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
-            </div>
-            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-        </div>
-        <div id="photo2-2" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
-            <h2 class="modalTitle">Photo</h2>
-            <img src="img/photos/photo5-large.jpg" alt="Photo" >
-            <div class="info">
-                <img src="img/avatars/avatar6.jpg" alt="Photo"  class="avatar">
-                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
-            </div>
-            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-        </div>
-        <div id="photo2-3" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
-            <h2 class="modalTitle">Photo</h2>
-            <img src="img/photos/photo6-large.jpg" alt="Photo" >
-            <div class="info">
-                <img src="img/avatars/avatar7.jpg" alt="Photo"  class="avatar">
-                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
-            </div>
-            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-        </div>
-        <div id="photo3-1" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
-            <h2 class="modalTitle">Photo</h2>
-            <img src="img/photos/photo7-large.jpg" alt="Photo" >
-            <div class="info">
-                <img src="img/avatars/avatar3.jpg" alt="Photo"  class="avatar">
-                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
-            </div>
-            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-        </div>
-        <div id="photo3-2" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
-            <h2 class="modalTitle">Photo</h2>
-            <img src="img/photos/photo8-large.jpg" alt="Photo" >
-            <div class="info">
-                <img src="img/avatars/avatar7.jpg" alt="Photo"  class="avatar">
-                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
-            </div>
-            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-        </div>
-        <div id="photo3-3" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
-            <h2 class="modalTitle">Photo</h2>
-            <img src="img/photos/photo9-large.jpg" alt="Photo" >
-            <div class="info">
-                <img src="img/avatars/avatar4.jpg" alt="Photo"  class="avatar">
-                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
-            </div>
-            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-        </div>
-        <script>
-          $(document).foundation();
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
