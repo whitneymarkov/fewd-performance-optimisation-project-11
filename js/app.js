@@ -1,23 +1,24 @@
 $(document).foundation();
 
 
-const imageGrid = document.querySelector('.image-grid');
-let footer = document.querySelector('footer');
+const imageGrid = document.querySelector('.image-grid'),
+    footer = document.querySelector('footer');
 
 imageGrid.addEventListener('click', (e)=>{
   e.preventDefault();
-  let modalID = e.target.parentElement.getAttribute('data-reveal-id');
-  let alt = e.target.getAttribute('alt');
-  let src = e.target.getAttribute('src');
-  let source = src.replace('.jpg', '-large.jpg');
-  let avatar = e.target.parentElement.nextElementSibling.firstElementChild.getAttribute('src');
+  let modalID = e.target.parentElement.getAttribute('data-reveal-id'),
+        alt = e.target.getAttribute('alt'),
+        src = e.target.getAttribute('src'),
+        source = src.replace('.jpg', '-large.jpg'),
+        avatar = e.target.parentElement.nextElementSibling.firstElementChild.getAttribute('class').replace('avatar icon-', '') + '.jpg';
+
 
   let modalHTML = `
   <div id="${modalID}" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
     <h2 class="modalTitle">Photo</h2>
-    <img src="${source}" alt="${alt}" >
+    <img src="${source}" alt="${alt}">
       <div class="info">
-        <img src="${avatar}" alt="Photo"  class="avatar">
+        <img src="img/avatars/${avatar}" alt="Photo"  class="avatar">
           <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
         </div>
         <a class="close-reveal-modal" aria-label="Close">&#215;</a>
